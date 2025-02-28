@@ -21,9 +21,13 @@
             border: 2px solid #FFB6C1;
             border-radius: 20px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 🌟 Ensures content is centered */
+            justify-content: center;
             width: 60%;
-            margin-bottom: 30px;
+            max-width: 600px; /* 🌟 Prevents it from getting too wide */
+            margin: 20px auto; /* 🌟 Centers the form on the page */
         }
 
         /* 🌸 Question Title */
@@ -46,15 +50,21 @@
         .submit-btn {
             background: #e0b6cf;
             color: #5A3E36;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border: 2px solid #FFB6C1;
             border-radius: 10px;
             cursor: pointer;
             font-size: 18px;
-            margin-top: 15px;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
         }
-        .submit-btn:hover {
-            background: #eb3169;
+
+        /* 🌟 Center the Submit Button Properly */
+        .submit-container {
+            display: flex;
+            justify-content: center; /* 🌟 Centers the button */
+            margin-top: 20px;
         }
 
         /* 🌸 Decorative Images */
@@ -92,6 +102,60 @@
             font-size: 12px;
             color: #5A3E36;
         }
+
+        /* 🌟 Responsive Design with Media Queries */
+
+        /* For tablets (≤ 768px) */
+        @media (max-width: 768px) {
+            .container {
+                width: 80%;  /* Adjust width */
+                padding: 30px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            input {
+                font-size: 14px;
+                width: 90%;
+            }
+            .submit-btn {
+                width: 80%; /* 🌟 Makes button adapt to smaller screens */
+            }
+            .strawberry {
+                width: 120px;
+            }
+            .duck {
+                width: 80px;
+            }
+        }
+
+        /* For mobile screens (≤ 480px) */
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;  /* Full width */
+                padding: 20px;
+            }
+            h1 {
+                font-size: 18px;
+            }
+            input {
+                font-size: 14px;
+                width: 100%;  /* Full width */
+            }
+            .submit-btn {
+                width: 100%; /* 🌟 Full-width button on small screens */
+            }
+            .strawberry {
+                width: 80px;
+                top: 5px;
+                left: 5px;
+            }
+            .duck {
+                width: 60px;
+                bottom: 5px;
+                right: 5px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -117,7 +181,10 @@
             <input type="text" name="entry.686509013" placeholder="Write name or paste link..." required>
         </div>
 
-        <button type="submit" class="submit-btn">Submit</button>
+        <!-- 🌟 Submit Button (Now properly centered) -->
+        <div class="submit-container">
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
     </form>
 
     <!-- 🌸 Credits Section -->
@@ -137,4 +204,6 @@
 </body>
 </html>
 
+       
 
+ 
