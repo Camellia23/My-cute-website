@@ -1,4 +1,4 @@
- 🌸 My Cute Website 🎀
+## 🌸 My Cute Website 🎀
 
 Welcome to **My Cute Website** , a pastel-themed Q&A page where users can share their favorite songs! 🎶✨  
 
@@ -18,5 +18,5 @@ Click here to visit: [https://camellia23.github.io/my-website/](https://camellia
 
 
 ## 📜 Privacy Notice
-This website is **publicly accessible**, but the source code is **private** and cannot be viewed by others.  
+This website is **open-source**, and the source code is **public** it can be viewed by others.  
 
