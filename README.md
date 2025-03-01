@@ -193,6 +193,8 @@
     <div class="overlay" id="overlay"></div>
     <div class="popup" id="popup">
         Thank you for using my website! 😊
+        Your response has been successfully recorded <3
+        You may now close the tab 🌸
     </div>
 
     <!-- 🌸 Credits Section -->
