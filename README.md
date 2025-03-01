@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,14 +67,14 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            width: 100px;
+            width: 200px; /* Increased size */
         }
         
         .duck {
             position: fixed;
             bottom: 10px;
             right: 10px;
-            width: 80px;
+            width: 150px; /* Increased size */
         }
 
         /* 🌸 Credits Section */
@@ -133,10 +133,10 @@
                 padding: 20px;
             }
             .strawberry {
-                width: 80px;
+                width: 150px; /* Adjusted size for smaller screens */
             }
             .duck {
-                width: 60px;
+                width: 120px; /* Adjusted size for smaller screens */
             }
         }
 
@@ -155,10 +155,10 @@
                 width: 100%;
             }
             .strawberry {
-                width: 60px;
+                width: 120px; /* Adjusted size for mobile */
             }
             .duck {
-                width: 50px;
+                width: 100px; /* Adjusted size for mobile */
             }
         }
     </style>
@@ -194,7 +194,7 @@
     <div class="popup" id="popup">
         Thank you for using my website! 😊
         Your response has been successfully recorded <3
-        You may now close the tab 🌸
+        You many now close the tab 🌸 
     </div>
 
     <!-- 🌸 Credits Section -->
@@ -236,11 +236,11 @@
                 document.getElementById('popup').style.display = 'block';
                 document.getElementById('overlay').style.display = 'block';
 
-                // Hide the pop-up and overlay after 25 seconds
+                // Hide the pop-up and overlay after 10 seconds
                 setTimeout(function() {
                     document.getElementById('popup').style.display = 'none';
                     document.getElementById('overlay').style.display = 'none';
-                }, 3000);
+                }, 25000); // 25 seconds (25000 milliseconds)
             })
             .catch((error) => {
                 console.error('Error submitting form:', error);
