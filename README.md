@@ -3,83 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Favourite Song</title>
+    <title>Pastel Q&A</title>
     <style>
+        /* 🌸 Page Styling */
         body {
-            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #FFD1DC, #FFF5BA);
+            font-family: "Papyrus", sans-serif;
             text-align: center;
-            background: linear-gradient(to bottom, #ffd6e0, #ffe5b4);
+            padding: 20px;
+            color: #5A3E36;
             margin: 0;
-            padding: 0;
         }
+
+        /* 🌸 Main Container */
         .container {
+            background: #FFEEF0;
+            padding: 30px;
+            border: 2px solid #FFB6C1;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            width: 90%;
             max-width: 600px;
             margin: 20px auto;
-            padding: 20px;
         }
-        .question-box {
-            background: #ffeef2;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 12px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+        /* 🌸 Question Title */
+        h1 {
+            font-size: 22px;
+            margin-bottom: 20px;
         }
-        .question-box h3 {
-            color: #5a2a27;
-            margin-bottom: 10px;
-        }
-        .input-field {
+
+        /* 🌸 Answer Input Box */
+        input {
             width: 90%;
+            max-width: 400px;
+            height: 40px;
             padding: 10px;
-            border: 1px solid #ffb6c1;
-            border-radius: 8px;
-            outline: none;
+            border: 2px solid #FFB6C1;
+            border-radius: 10px;
             font-size: 16px;
-        }
-        .submit-btn {
+            margin: 0 auto;
             display: block;
-            width: 50%;
-            max-width: 200px;
-            padding: 10px;
-            margin: 20px auto;
-            background: #ff9aa2;
-            border: none;
-            border-radius: 8px;
-            font-size: 18px;
-            color: white;
+        }
+
+        /* 🌸 Submit Button */
+        .submit-btn {
+            background: #e0b6cf;
+            color: #5A3E36;
+            padding: 10px 20px;
+            border: 2px solid #FFB6C1;
+            border-radius: 10px;
             cursor: pointer;
-            transition: 0.3s;
+            font-size: 18px;
+            margin: 20px auto;
+            display: block;
         }
         .submit-btn:hover {
-            background: #ff6b81;
+            background: #eb3169;
         }
-        @media (max-width: 600px) {
-            .question-box {
+
+        /* 🌸 Decorative Images */
+        .strawberry {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+        }
+        
+        .duck {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 80px;
+        }
+
+        /* 🌸 Credits Section */
+        .credits {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #5A3E36;
+        }
+        .credits ul {
+            list-style: none;
+            padding: 0;
+        }
+        .credits li {
+            margin-bottom: 5px;
+        }
+
+        /* 🌸 Copyright */
+        .copyright {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #5A3E36;
+        }
+
+        /* 🌸 Pop-Up Styling */
+        .popup {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #A2DDF0; /* Pastel blue */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            font-size: 18px;
+            color: #5A3E36;
+            z-index: 1000;
+        }
+
+        /* 🌸 Overlay Styling */
+        .overlay {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+
+        /* 🌸 Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            /* Adjust for iPad and smaller screens */
+            .container {
+                padding: 20px;
+            }
+            .strawberry {
+                width: 80px;
+            }
+            .duck {
+                width: 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Adjust for mobile phones */
+            body {
+                padding: 10px;
+            }
+            .container {
                 padding: 15px;
             }
-            .input-field {
+            h1 {
+                font-size: 18px;
+            }
+            input {
                 width: 100%;
+            }
+            .strawberry {
+                width: 60px;
+            }
+            .duck {
+                width: 50px;
             }
         }
     </style>
 </head>
 <body>
-    <h1>Your Favourite Song</h1>
-    <div class="container">
-        <div class="question-box">
-            <h3>What is your name?</h3>
-            <input type="text" class="input-field" placeholder="Write your name here...">
+
+    <!-- 🌸 Decorative Images -->
+    <img src="https://assets.onecompiler.app/43ab3rkmv/43ab3taem/strawberry%20(1).png" alt="Strawberry" class="strawberry">
+    <img src="https://assets.onecompiler.app/43ab3rkmv/43ab3taem/duck.png" alt="Duck" class="duck">
+
+    <!-- 🌸 Form (All questions in one form) -->
+    <form id="qaForm">
+        <div class="container">
+            <h1>What is your name?</h1>
+            <input type="text" name="entry.594710907" placeholder="Write your name here..." required>
         </div>
-        <div class="question-box">
-            <h3>What is your favourite song?</h3>
-            <input type="text" class="input-field" placeholder="Write name or paste link...">
+
+        <div class="container">
+            <h1>What is your favourite song?</h1>
+            <input type="text" name="entry.2089872087" placeholder="Write name or paste link..." required>
         </div>
-        <div class="question-box">
-            <h3>What is that one song you always listen to when you're sad?</h3>
-            <input type="text" class="input-field" placeholder="Write name or paste link...">
+
+        <div class="container">
+            <h1>What is that one song you always listen to when you're sad?</h1>
+            <input type="text" name="entry.686509013" placeholder="Write name or paste link..." required>
         </div>
-        <button class="submit-btn">Submit</button>
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <!-- 🌸 Pop-Up -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        Thank you for using my website! 😊
     </div>
+
+    <!-- 🌸 Credits Section -->
+    <div class="credits">
+        <p><strong>Image Credits:</strong></p>
+        <ul>
+            <li>Strawberry PNG by <a href="https://www.flaticon.com/free-icons/food" target="_blank">smashingstocks - Flaticon</a></li>
+            <li>Strawberry-blossoms PNG by <a href="https://assets.onecompiler.app/43ab3rkmv/43ab3taem/strawberry-blossoms.png" target="_blank">Freepik - Flaticon</a></li>
+        </ul>
+    </div>
+
+    <!-- 🌸 Copyright -->
+    <div class="copyright">
+        © 2025 by Camellia Banerjee
+    </div>
+
+    <!-- 🌸 JavaScript for Form Submission and Pop-Up -->
+    <script>
+        document.getElementById('qaForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Get form data
+            const formData = new FormData(event.target);
+
+            // Convert form data to URL-encoded string
+            const urlEncodedData = new URLSearchParams(formData).toString();
+
+            // Send data to Google Forms
+            fetch('https://docs.google.com/forms/d/e/1FAIpQLSfTybyWbnYvin_S8t04Dh47xfsLvIe1jva3yZ8vV_W9p6VNnw/formResponse', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: urlEncodedData,
+                mode: 'no-cors', // Required for Google Forms
+            })
+            .then(() => {
+                // Show the pop-up and overlay
+                document.getElementById('popup').style.display = 'block';
+                document.getElementById('overlay').style.display = 'block';
+
+                // Hide the pop-up and overlay after 3 seconds
+                setTimeout(function() {
+                    document.getElementById('popup').style.display = 'none';
+                    document.getElementById('overlay').style.display = 'none';
+                }, 3000);
+            })
+            .catch((error) => {
+                console.error('Error submitting form:', error);
+            });
+        });
+    </script>
+
 </body>
 </html>
 
