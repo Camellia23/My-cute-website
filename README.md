@@ -166,8 +166,8 @@
 <body>
 
     <!-- 🌸 Decorative Images -->
-    <img src="https://assets.onecompiler.app/43ab3rkmv/43ab3taem/strawberry%20(1).png" alt="Strawberry" class="strawberry">
-    <img src="https://assets.onecompiler.app/43ab3rkmv/43ab3taem/duck.png" alt="Duck" class="duck">
+    <img src="https://drive.google.com/file/d/1rfQwSfhjCputNNXck7qmdT8_cTTXuOYr/view?usp=share_link" alt="Strawberry" class="strawberry">
+    <img src="https://drive.google.com/file/d/1i18oNOcbExvU_ssXHV6GoCBXQ0D1xT-P/view?usp=share_link" class="duck">
 
     <!-- 🌸 Form (All questions in one form) -->
     <form id="qaForm">
@@ -194,7 +194,7 @@
     <div class="popup" id="popup">
         Thank you for using my website! 😊
         Your response has been successfully recorded <3
-        You many now close the tab 🌸 
+        You may now close the tab 🌸 
     </div>
 
     <!-- 🌸 Credits Section -->
