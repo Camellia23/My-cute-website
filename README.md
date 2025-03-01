@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -166,8 +166,8 @@
 <body>
 
     <!-- 🌸 Decorative Images -->
-    <img src="https://drive.google.com/file/d/1rfQwSfhjCputNNXck7qmdT8_cTTXuOYr/view?usp=share_link" alt="Strawberry" class="strawberry">
-    <img src="https://drive.google.com/file/d/1i18oNOcbExvU_ssXHV6GoCBXQ0D1xT-P/view?usp=share_link" class="duck">
+    <img src="https://imgur.com/6cJT3q8" alt="Strawberry" class="strawberry">
+    <img src="https://imgur.com/S7dLz39" class="duck">
 
     <!-- 🌸 Form (All questions in one form) -->
     <form id="qaForm">
