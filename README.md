@@ -236,7 +236,7 @@
                 document.getElementById('popup').style.display = 'block';
                 document.getElementById('overlay').style.display = 'block';
 
-                // Hide the pop-up and overlay after 12 seconds
+                // Hide the pop-up and overlay after 25 seconds
                 setTimeout(function() {
                     document.getElementById('popup').style.display = 'none';
                     document.getElementById('overlay').style.display = 'none';
