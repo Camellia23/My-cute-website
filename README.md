@@ -165,9 +165,7 @@
 </head>
 <body>
 
-    <!-- 🌸 Decorative Images -->
-    <img src="https://imgur.com/6cJT3q8" alt="Strawberry" class="strawberry">
-    <img src="https://imgur.com/S7dLz39" class="duck">
+   
 
     <!-- 🌸 Form (All questions in one form) -->
     <form id="qaForm">
@@ -197,13 +195,7 @@
         You may now close the tab 🌸 
     </div>
 
-    <!-- 🌸 Credits Section -->
-    <div class="credits">
-        <p><strong>Image Credits:</strong></p>
-        <ul>
-            <li>Strawberry PNG by <a href="https://www.flaticon.com/free-icons/food" target="_blank">smashingstocks - Flaticon</a></li>
-            <li>Strawberry-blossoms PNG by <a href="https://assets.onecompiler.app/43ab3rkmv/43ab3taem/strawberry-blossoms.png" target="_blank">Freepik - Flaticon</a></li>
-        </ul>
+   
     </div>
 
     <!-- 🌸 Copyright -->
