@@ -204,7 +204,7 @@
             <li>Strawberry PNG by <a href="https://www.flaticon.com/free-icons/food" target="_blank">smashingstocks - Flaticon</a></li>
             <li>Strawberry-blossoms PNG by <a href="https://assets.onecompiler.app/43ab3rkmv/43ab3taem/strawberry-blossoms.png" target="_blank">Freepik - Flaticon</a></li>
         </ul>
-    </div>
+  
 
     <!-- 🌸 Copyright -->
     <div class="copyright">
