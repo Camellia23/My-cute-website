@@ -14,7 +14,6 @@
             color: #5A3E36;
             margin: 0;
         }
-
         /* 🌸 Main Container */
         .container {
             background: #FFEEF0;
