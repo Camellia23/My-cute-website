@@ -62,37 +62,6 @@
             background: #eb3169;
         }
 
-        /* 🌸 Decorative Images */
-        .strawberry {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 200px; /* Increased size */
-            background: transparent !important; /* Ensure no background */
-        }
-        
-        .duck {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            width: 150px; /* Increased size */
-            background: transparent !important; /* Ensure no background */
-        }
-
-        /* 🌸 Credits Section */
-        .credits {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #5A3E36;
-        }
-        .credits ul {
-            list-style: none;
-            padding: 0;
-        }
-        .credits li {
-            margin-bottom: 5px;
-        }
-
         /* 🌸 Copyright */
         .copyright {
             margin-top: 20px;
@@ -127,49 +96,9 @@
             background: rgba(0,0,0,0.5);
             z-index: 999;
         }
-
-        /* 🌸 Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            /* Adjust for iPad and smaller screens */
-            .container {
-                padding: 20px;
-            }
-            .strawberry {
-                width: 150px; /* Adjusted size for smaller screens */
-            }
-            .duck {
-                width: 120px; /* Adjusted size for smaller screens */
-            }
-        }
-
-        @media (max-width: 480px) {
-            /* Adjust for mobile phones */
-            body {
-                padding: 10px;
-            }
-            .container {
-                padding: 15px;
-            }
-            h1 {
-                font-size: 18px;
-            }
-            input {
-                width: 100%;
-            }
-            .strawberry {
-                width: 120px; /* Adjusted size for mobile */
-            }
-            .duck {
-                width: 100px; /* Adjusted size for mobile */
-            }
-        }
     </style>
 </head>
 <body>
-
-    <!-- 🌸 Decorative Images -->
-    <img src="https://i.imgur.com/your-transparent-strawberry.png" alt="Strawberry" class="strawberry">
-    <img src="https://i.imgur.com/your-transparent-duck.png" alt="Duck" class="duck">
 
     <!-- 🌸 Form (All questions in one form) -->
     <form id="qaForm">
@@ -195,16 +124,12 @@
     <div class="overlay" id="overlay"></div>
     <div class="popup" id="popup">
         Thank you for using my website! 😊
+        Your response has been successfully recorded <3
+        You may now close the tab 🌸
+        
     </div>
 
-    <!-- 🌸 Credits Section -->
-    <div class="credits">
-        <p><strong>Image Credits:</strong></p>
-        <ul>
-            <li>Strawberry PNG by <a href="https://www.flaticon.com/free-icons/food" target="_blank">smashingstocks - Flaticon</a></li>
-            <li>Strawberry-blossoms PNG by <a href="https://assets.onecompiler.app/43ab3rkmv/43ab3taem/strawberry-blossoms.png" target="_blank">Freepik - Flaticon</a></li>
-        </ul>
-    </div>
+   
 
     <!-- 🌸 Copyright -->
     <div class="copyright">
