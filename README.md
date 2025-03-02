@@ -204,7 +204,7 @@
             <li>Strawberry PNG by <a href="https://www.flaticon.com/free-icons/food" target="_blank">smashingstocks - Flaticon</a></li>
             <li>Strawberry-blossoms PNG by <a href="https://assets.onecompiler.app/43ab3rkmv/43ab3taem/strawberry-blossoms.png" target="_blank">Freepik - Flaticon</a></li>
         </ul>
-  
+    </div>
 
     <!-- 🌸 Copyright -->
     <div class="copyright">
@@ -236,11 +236,11 @@
                 document.getElementById('popup').style.display = 'block';
                 document.getElementById('overlay').style.display = 'block';
 
-                // Hide the pop-up and overlay after 10 seconds
+                // Hide the pop-up and overlay after 25 seconds
                 setTimeout(function() {
                     document.getElementById('popup').style.display = 'none';
                     document.getElementById('overlay').style.display = 'none';
-                }, 10000); // 10 seconds (10000 milliseconds)
+                }, 25000); // 25 seconds (25000 milliseconds)
             })
             .catch((error) => {
                 console.error('Error submitting form:', error);
@@ -250,8 +250,3 @@
 
 </body>
 </html>
-
-
-       
-
- 
